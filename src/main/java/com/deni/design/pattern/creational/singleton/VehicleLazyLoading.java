@@ -5,7 +5,7 @@ public class VehicleLazyLoading {
     private static volatile VehicleLazyLoading vehicleLazyLoading;
 
     private VehicleLazyLoading() throws InstantiationException {
-        if (VehicleLazyLoading.vehicleLazyLoading != null) {
+        if (vehicleLazyLoading != null) {
             throw new InstantiationException("Initialize only via the getInstance method");
         }
     }
